@@ -1,0 +1,456 @@
+body,
+html {
+  /* background: gray; */
+  font-family: "Spartan", sans-serif;
+  width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/* navbar */
+.nav-container {
+  background-color: white !important;
+}
+.logo-div {
+  margin-top: 10px;
+  margin-left: 20% !important;
+  margin-bottom: 12px;
+}
+.logo-div h3 {
+  text-transform: uppercase;
+  font-family: "Secular One", sans-serif;
+}
+.logo-div a:hover {
+  text-decoration: none;
+}
+.logo-div h5 {
+  font-family: "Spartan", sans-serif;
+}
+.nav-links {
+  margin-left: -5% !important;
+}
+.navbar__link--active {
+  color: black !important;
+  transition: border-bottom 0.5s ease-in-out !important;
+}
+.minified-nav {
+  display: none;
+}
+.hamburger {
+  margin-left: 80%;
+}
+@media screen and (max-width: 900px) {
+  .minified-nav {
+    padding-top: 15px;
+    display: block;
+  }
+  .hamburger {
+      margin-left: 60% !important;
+      padding: 20px;
+  }
+  .hamburger h3 {
+    margin-top: -8px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-family: "Secular One", sans-serif;
+  }
+  .nav-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hamburger {
+    margin-right: -10%;
+  }
+}
+/* menu container */
+#flyoutMenu {
+  margin-top: 20px;
+}
+#flyoutMenu {
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+}
+#flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+#flyoutMenu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+#flyoutMenu h2 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+}
+#flyoutMenu h2 a:hover {
+  text-decoration: underline;
+}
+.menu-title {
+  font-size: 20px;
+  font-family: "Spartan", sans-serif;
+}
+.menu-title:hover {
+  color: #999999 !important;
+  text-decoration: none !important;
+}
+/* hero */
+.lead {
+  margin-right: -20px;
+  background-image: url("img/sunny.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.lead {
+  height: 800px;
+}
+.lead-title {
+  padding-top: 100px;
+}
+.bold {
+  font-weight: bold;
+}
+.lead-title h5 {
+  font-family: "Spartan", sans-serif;
+  color: white;
+}
+.lead-title h1 {
+  text-transform: uppercase;
+  font-family: "Secular One", sans-serif;
+  color: white;
+  font-size: 80px;
+}
+.start-btn {
+  margin-top: 220px;
+}
+.start-btn,
+.plans-btn,
+.next1-btn,
+.next2-btn,
+.next3-btn,
+.submit-btn {
+  background-color: black !important;
+  border: none;
+  color: white !important;
+}
+.start-btn:hover,
+.story-btn:hover {
+  background-color: rgba(2, 2, 2, 0.8) !important;
+  color: gray !important;
+}
+/* coverage */
+.coverage {
+  height: 680px;
+}
+.coverage-right {
+  height: 680px;
+  background-image: url("img/river.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blurb {
+  margin-top: 75px;
+}
+.break {
+  margin-left: 29%;
+  width: 50px;
+  border-top: solid 3.5px black;
+}
+.blurb h1 {
+  padding-top: 30px;
+  margin-left: 28%;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.coverage p {
+  margin-top: 75px;
+  margin-left: 28%;
+  margin-right: 75px;
+  text-align: left;
+}
+.plans-btn:hover {
+  color: gray !important;
+}
+@media screen and (max-width: 900px) {
+  .coverage p {
+    margin-top: 10%;
+  }
+  .plans-btn {
+    margin-top: 5% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .coverage-right {
+    display: none;
+  }
+}
+/* ride */
+.ride {
+  height: 1300px;
+  background-image: url("img/path.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.ride-title {
+  padding-top: 75px;
+  margin-right: 28%;
+}
+@media screen and (max-width: 1200px) {
+  .ride-title {
+    margin-right: 0px;
+  }
+}
+.break2 {
+  margin-left: 24%;
+  width: 50px;
+  border-top: solid 4.5px black;
+}
+.ride-title h1 {
+  padding-top: 30px;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+}
+.cards {
+  margin-top: 120px;
+}
+.card {
+  height: 300px;
+  border-radius: 0;
+  font-family: "Spartan", sans-serif;
+  color: white;
+}
+@media screen and (max-width: 993px) {
+  .card {
+    height: 220px;
+  }
+  .card p {
+    padding: 0 40px 0 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    height: 420px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .ride {
+    height: 1975px;
+  }
+}
+.card h5 {
+  padding: 30px 0 20px;
+  font-family: "Spartan", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+.card p {
+  margin: 25px 25px 0 25px;
+}
+.arrow1 {
+  padding-top: 65px;
+  font-size: 28px;
+}
+.arrow {
+  padding-top: 40px;
+  font-size: 28px;
+}
+@media screen and (max-width: 1200px) {
+  .arrow1,
+  .arrow {
+    display: none;
+  }
+}
+.cy {
+  background: rgb(242, 190, 93);
+}
+.cr {
+  background: rgb(253, 96, 97);
+}
+.cb {
+  background: rgb(85, 111, 183);
+}
+.cg {
+  background: rgb(118, 203, 170);
+}
+.story-btn {
+  padding-top: 55px;
+  margin-top: 300px;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+}
+/* * Get Started * */
+.sign-up {
+  display: center;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .sign-up {
+    display: flex;
+  }
+  .form-content {
+    margin: auto !important;
+  }
+}
+.arrow-down {
+  font-size: 28px;
+}
+/* about */
+.form-content {
+  margin: 100px;
+  width: 700px;
+  display: inline-block;
+}
+.about {
+  padding: 40px 40px 15px 20px;
+  margin-bottom: 30px;
+  border: solid 1px lightgray;
+}
+.about h4 {
+  font-family: "Spartan", sans-serif;
+}
+.about p {
+  padding-top: 10px;
+}
+.about .uk-input {
+  margin: 10px;
+}
+.terms {
+  margin: 60px 0 30px;
+}
+.next1-btn {
+  margin-top: 30px;
+}
+.next1-btn:hover,
+.next2-btn:hover,
+.next3-btn:hover,
+.submit-btn:hover {
+  background-color: black !important;
+  color: gray !important;
+}
+/* often */
+.often {
+  padding: 40px 30px 0 30px;
+  margin-bottom: 30px;
+  border: solid 1px lightgray;
+}
+.often h4 {
+  /* padding-bottom: 50px; */
+  font-family: "Spartan", sans-serif;
+}
+.often input {
+  margin: 10px;
+}
+.next2-btn {
+  margin-top: 70px;
+}
+/* bike-info */
+.bike-info {
+  padding: 40px 30px 10px 30px;
+  margin-bottom: 30px;
+  border: solid 1px lightgray;
+}
+.bike-info h4 {
+  font-family: "Spartan", sans-serif;
+}
+.selected {
+  border: solid 1px #b2b2b2;
+}
+.far {
+  font-size: 50px;
+}
+/* .up, .down {
+    margin-top: 7px;
+    margin-bottom: 7px;
+} */
+.up:hover,
+.down:hover {
+  color: gray;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.active {
+  color: gray;
+}
+.club-list {
+  list-style: none;
+}
+.clubs {
+  margin: 10px;
+}
+.next3-btn {
+  margin-top: 20px;
+}
+/* you */
+.you {
+  padding: 40px 40px 10px 20px;
+  margin-bottom: 30px;
+  border: solid 1px lightgray;
+}
+.you h3 {
+  padding-bottom: 30px;
+  font-family: "Spartan", sans-serif;
+}
+.you .uk-input {
+  margin: 10px;
+}
+.active1 {
+  border: solid 1px black;
+}
+/* .you button {
+    margin-top: 30px;
+} */
+/* Terms & Conditions */
+.terms-privacy {
+  text-align: center;
+}
+.terms h4,
+p {
+  font-family: "Spartan", sans-serif;
+}
+.terms-blurb {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.agree {
+  padding: 10px;
+}
+/* About */
+.about-page {
+  text-align: center;
+}
+.about-main {
+  margin: 20px 100px 50px 100px;
+}
+.about-main h1 {
+  margin-bottom: 20px;
+  font-family: "Secular One", sans-serif;
+  text-transform: uppercase;
+}
+.about-main h5 {
+  font-family: "Spartan", sans-serif;
+}
