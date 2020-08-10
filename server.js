@@ -25,28 +25,18 @@ app.use(function(req, res, next) {
     next();
   })
 
-// app.get("/signup", (req, res) => {
-//     res.sendFile(path.join(__dirname + "./public/signup.html"));
-// });
-
-// app.get("/signup2", (req, res) => {
-//     res.sendFile(path.join(__dirname + "./public/signup2.html"));
-// });
-
-// app.get("/signup3", (req, res) => {
-//     res.sendFile(path.join(__dirname + "./public/signup3.html"));
-// });
-
-// app.get("/signup4", (req, res) => {
-//     res.sendFile(path.join(__dirname + "./public/signup4.html"));
-// });
-
 const routes = require('./routes');
 app.use(routes);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+if (process.env.NODE_ENV === 'production') {
+  // Express will serve up production assets
+  app.use(express.static('client/build'));
+
+  // Express serve up index.html file if it doesn't recognize route
+  app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.listen(PORT, function () {
     console.log(`🌎 ==> API server now on port ${PORT}!`);
