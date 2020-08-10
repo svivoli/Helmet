@@ -4,7 +4,8 @@ const path = require('path');
 const PORT = process.env.PORT || 3002;
 const app = express();
 
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://snvivoli:password1@ds231739.mlab.com:31739/heroku_0lz9s37f";
+// const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet";
 const mongoose = require("mongoose");
 // const MongoStore = require("connect-mongo")(session);
 // const bodyParser = require('body-parser');
