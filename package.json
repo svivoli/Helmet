@@ -5,7 +5,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "per-env NODE_ENV=production && npm run start:prod || npm run start:dev || node .",
+    "start": "per-env",
     "server": "nodemon server.js",
     "start:production": "node server.js",
     "start:development": "concurrently \"npm run server\" \"npm run client\"",
