@@ -4,7 +4,7 @@ const path = require('path');
 const PORT = process.env.PORT || 3002;
 const app = express();
 
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://snvivoli:password1@ds231739.mlab.com:31739/heroku_0lz9s37f";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://snvivoli:password1@ds157258.mlab.com:57258/heroku_5zmxlz5t";
 // const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/helmet";
 const mongoose = require("mongoose");
 // const MongoStore = require("connect-mongo")(session);
@@ -28,14 +28,15 @@ app.use(function(req, res, next) {
 const routes = require('./routes');
 app.use(routes);
 
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+if (process.env.NODE_ENV === 'production') {
+  // Express will serve up production assets
+  app.use(express.static('client/build'));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+  // Express serve up index.html file if it doesn't recognize route
+  app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.listen(PORT, function () {
     console.log(`🌎 ==> API server now on port ${PORT}!`);
