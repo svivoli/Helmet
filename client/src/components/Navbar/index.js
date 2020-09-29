@@ -15,7 +15,7 @@ function Navbar() {
 
             <div className="logo-div">
               <a href="/"><h3>Helmet Insurance</h3></a>
-              <h5>For Riders. By Riders</h5>
+              <h5>For Riders. By Riders.</h5>
             </div>
 
           </div>
