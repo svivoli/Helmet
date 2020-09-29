@@ -222,14 +222,14 @@ function Form() {
             <section className="sign-up">
                 <div className="form-content">
                     <div className="bike-info">
-                        <h4>What do you use your bike for (primarily)?</h4>
+                        <h4>What do you use your bike for?</h4>
                         <div className="uk-margin-medium">
-                            <input type="button" className={`light uk-button uk-button-default ${commuting}`} value="Commuting" onClick={handleUsesChange}></input>
-                            <input type="button" className={`light uk-button uk-button-default ${pleasure}`} value="Pleasure" onClick={handleUsesChange}></input>
-                            <input type="button" className={`light uk-button uk-button-default ${exercise}`} value="Exercise" onClick={handleUsesChange}></input>
+                            <input type="button" className={`uk-button uk-button-default ${commuting}`} value="Commuting" onClick={handleUsesChange}></input>
+                            <input type="button" className={`uk-button uk-button-default ${pleasure}`} value="Pleasure" onClick={handleUsesChange}></input>
+                            <input type="button" className={`uk-button uk-button-default ${exercise}`} value="Exercise" onClick={handleUsesChange}></input>
                             <br></br>
-                            <input type="button" className={`light uk-button uk-button-default ${racing}`} value="Racing" onClick={handleUsesChange}></input>
-                            <input type="button" className={`light uk-button uk-button-default ${other}`} value="Other" onClick={handleUsesChange}></input>
+                            <input type="button" className={`uk-button uk-button-default ${racing}`} value="Racing" onClick={handleUsesChange}></input>
+                            <input type="button" className={`uk-button uk-button-default ${other}`} value="Other" onClick={handleUsesChange}></input>
                         </div>
                         <h4>Have you ever had a bike stolen?</h4>
                         <div className="row justify-content-md-center uk-margin-large">

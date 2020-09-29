@@ -370,12 +370,15 @@ html {
 }
 /* bike-info */
 .bike-info {
-  padding: 40px 30px 10px 30px;
+  padding: 40px 30px 0 30px;
   margin-bottom: 30px;
   border: solid 1px lightgray;
 }
 .bike-info h4 {
   font-family: "Spartan", sans-serif;
+}
+.bike-info input {
+  margin: 10px;
 }
 .selected {
   border: solid 1px #b2b2b2;
