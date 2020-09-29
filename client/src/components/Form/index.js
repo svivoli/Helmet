@@ -223,10 +223,11 @@ function Form() {
                 <div className="form-content">
                     <div className="bike-info">
                         <h4>What do you use your bike for (primarily)?</h4>
-                        <div className="uses uk-margin-medium">
+                        <div className="uk-margin-medium">
                             <input type="button" className={`light uk-button uk-button-default ${commuting}`} value="Commuting" onClick={handleUsesChange}></input>
                             <input type="button" className={`light uk-button uk-button-default ${pleasure}`} value="Pleasure" onClick={handleUsesChange}></input>
                             <input type="button" className={`light uk-button uk-button-default ${exercise}`} value="Exercise" onClick={handleUsesChange}></input>
+                            <br></br>
                             <input type="button" className={`light uk-button uk-button-default ${racing}`} value="Racing" onClick={handleUsesChange}></input>
                             <input type="button" className={`light uk-button uk-button-default ${other}`} value="Other" onClick={handleUsesChange}></input>
                         </div>
@@ -244,11 +245,11 @@ function Form() {
                             <div>
                                 <ul className="club-list"></ul>
                             </div>
-                            <div className="row">
+                            <div className="row align-items-center">
                                 <div className="col-md-10">
                                     <input className="clubs uk-input" onfocus="this.value=''" type="text" name="clubs" value={clubinput} onChange={handleClubsChange}></input>
                                 </div>
-                                <div className="col-md-2 uk-margin">
+                                <div className="col-md-2">
                                     <button className="club-btn uk-button uk-button-default" onClick={handleClubsAdd}>+</button>
                                 </div>
                             </div>
