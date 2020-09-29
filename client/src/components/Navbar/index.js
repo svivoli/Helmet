@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import MenuContainer from '../MenuContainer';
 
 function Navbar() {
+  function handleClick() {
+    alert("Coming Soon!");
+  }
+
   return (
     <div>
       <div uk-sticky="sel-target: .nav-container; cls-active: uk-navbar-sticky; bottom: #sticky-navbar">
@@ -38,9 +42,9 @@ function Navbar() {
               >About</NavLink></li>
               <li><NavLink
               exact
-              activeClassName="navbar__link--active"
               className="navbar__link"
-              to="/blog"
+              to="/"
+              onClick={handleClick}
               >Blog</NavLink></li>
             </ul>
 

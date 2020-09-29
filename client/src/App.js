@@ -31,10 +31,6 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/blog" component={() => {
-            window.location.href = 'https://medium.com/@dtrembois';
-            return null;
-          }} />
         </Switch>
       </div>
     </Router>
